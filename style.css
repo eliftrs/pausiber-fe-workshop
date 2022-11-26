@@ -26,12 +26,7 @@ nav{
     padding: 0 20px;
 
 }
-main{
-    height: calc(100% - 90px);
-    background-color: red;
-    width: 100%;
 
-}
 .logo-container{
     font-size: 36px;
     font-weight: 700;
@@ -46,7 +41,155 @@ main{
     margin-right: 20px;
     color: #fff;
     text-transform: capitalize;
+    border: none;
+    transition:  .10s all ease-in-out;
 }
+
+.nav-container ul .nav-link:hover{
+    border-bottom: 1px solid white;
+
+
+}
+
+
 .nav-container ul .nav-link:last-child {
     margin-right: 0;
 }
+
+main{
+    height: calc(100% - 90px);
+    background-color: #fd5;
+    width: 100%;
+    padding: 75px 150px 75px 30px;
+
+}
+main .main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+/*ctrl+alt+F=düzenlemek*/
+/* span tarzı şeyler etiket, element olunca nokta koymadık */
+/* */
+/*margin top negatifte yukarı (ters orantı) şekilde hareket eder */
+/*:root içerisine tüm sayfada  değişiklik yapmak istediğin değerleri gir (var) yazıp renk yazı diğer etiketelere kopyalayabilirsin */
+main .main-container .main-infos-content{
+    width: calc(100% - 500px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .main-container .main-infos-content .text-content{
+    margin-bottom: 50px;
+    margin-top: -200px;
+}
+
+main .main-container .main-infos-content .text-content h2{
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+main .main-container .main-infos-content .text-content span{
+    color: #474a57;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+main .main-container .main-infos-content .button-content{
+    display: flex;
+    gap: 20px;
+}
+
+main .main-container .main-infos-content .button-content button{
+    padding: 10px 34px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 4px 4px 0px 0px #eb7711 ;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+
+}
+main .main-container .main-infos-content .button-content button:hover{
+    box-shadow: -4px -4px 0px 0px  #eb7711 ;
+    animation: shake .3s 2 linear;
+    
+}
+
+main .main-container .main-image{
+    width: 500px;
+}
+.social-container{
+    position: absolute;
+    right: 25px;
+    top: 40%;
+}
+
+.social-container a .social-item{
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    align-items: center;
+
+}
+
+.social-container a .social-item.instagram:hover{
+    color: white;
+    background-color: #e4405f;
+}
+
+.social-container a .social-item.twitter:hover{
+    color: white;
+    background-color: #1da1f2;
+}
+
+.social-container a .social-item.github:hover{
+    color: white;
+    background-color: #171515;
+
+}
+
+.social-container a .social-item.linkedin:hover{
+    color: white;
+    background-color: #0a66c2;
+}
+
+@keyframes shake {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
